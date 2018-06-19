@@ -1,5 +1,20 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h2 id="title">Welcome to ember</h2>
 
 {{outlet}}
+
+<h1>Books</h1>
+{{#each model.book.data as |book|}}
+	Title: {{book.attributes.title}}<br>
+{{/each}}
+
+
+<h1>Author</h1>
+{{#each model.author.data as |author|}}
+	Author: {{author.attributes.author}}<br>
+{{/each}}
+
+
+<h1>Publisher</h1>
+{{#each model.publisher.data as |publisher|}}
+	Publisher: {{publisher.attributes.publisher}}<br>
+{{/each}}
