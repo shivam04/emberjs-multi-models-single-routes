@@ -1,7 +1,10 @@
 <h2 id="title">Welcome to ember</h2>
 
 {{outlet}}
-
+First Name: {{input value=firstName}}<br>
+Last Name: {{input value=lastName}}
+<h3>Hello {{fullName}}</h3>
+<h3>Hello {{otherName}}</h3>
 <h1>Books</h1>
 {{#each model.book.data as |book|}}
 	Title: {{book.attributes.title}}<br>
